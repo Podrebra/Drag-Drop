@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+background: url(Crevisio-79-GkvTwvwtn.jpg);
+}
+
+.main {
+    min-height: calc(100vh - 80px);
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard{
+    display: flex;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px;
+    padding: 15px 0 15px;
+    background-color: rgb(227, 147, 176, 0.5);
+    flex-wrap: wrap;
+}
+
+.input_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 75%;
+    height: 20px;
+    background: rgba(255, 192, 203, .3);
+    border-radius: 5px;
+    border-style: none;
+}
+
+.input:active {
+    border: 0px white;
+}
+
+.columns {
+    display: inherit;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.hold_column{
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-right: 25px;
+    padding-bottom: 50px;
+}
+
+.done_column{
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-left: 25px;
+    padding-bottom: 50px;
+}
+
+.done_column li, .hold_column li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px 5px 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    cursor: grab;
+}
+.hold_column h3, .done_column h3 {
+    text-align: center;
+    
+}
